@@ -9,7 +9,7 @@ import {
 import React from "react";
 import AppBar from "../../AppBar";
 import img2 from "../../../assets/img2.jpg";
-const { width, height } = Dimensions.get("window");
+const { width } = Dimensions.get("window");
 
 function Bio({ navigation }) {
   return (
@@ -58,9 +58,9 @@ const styles = StyleSheet.create({
     backgroundColor: "black",
   },
   images: {
-    width: width * 0.9,
-    height: height * 0.7,
-    margin: width * 0.05,
+    margin: 20,
+    width: "90%",
+    height: 400,
   },
   wrapper: {
     flexWrap: "wrap",
@@ -69,8 +69,8 @@ const styles = StyleSheet.create({
     paddingBottom: width * 0.02,
   },
   head: {
-    marginBottom: width * 0.1,
-    marginHorizontal: width * 0.05,
+    marginBottom: 10,
+    marginHorizontal: 20,
   },
   headText: {
     fontSize: 25,

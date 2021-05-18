@@ -153,7 +153,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#00000070",
   },
   image: {
-    width: width * 0.91,
+    width: "91%",
     resizeMode: "contain",
   },
   rightArrow: {

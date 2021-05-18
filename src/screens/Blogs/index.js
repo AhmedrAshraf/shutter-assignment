@@ -20,7 +20,7 @@ function Blogs({ navigation }) {
           <Text style={styles.headText}>My Blog</Text>
           <View style={styles.row}>
             <Image source={img10} style={styles.images} />
-            <View>
+            <View style={{ width: "100%" }}>
               <Text style={styles.Text}>
                 Advanced Photography Tutorial For Pro
               </Text>
@@ -36,7 +36,7 @@ function Blogs({ navigation }) {
           </View>
           <View style={styles.row}>
             <Image source={img10} style={styles.images} />
-            <View>
+            <View style={{ width: "100%" }}>
               <Text style={styles.Text}>
                 Advanced Photography Tutorial For Pro
               </Text>
@@ -52,7 +52,7 @@ function Blogs({ navigation }) {
           </View>
           <View style={styles.row}>
             <Image source={img10} style={styles.images} />
-            <View>
+            <View style={{ width: "100%" }}>
               <Text style={styles.Text}>
                 Advanced Photography Tutorial For Pro
               </Text>
@@ -79,47 +79,43 @@ const styles = StyleSheet.create({
     backgroundColor: "black",
   },
   images: {
+    margin: 10,
+    width: "45%",
+    height: 120,
     borderWidth: 4,
-    width: width * 0.45,
-    height: width * 0.27,
     borderColor: "white",
-    margin: width * 0.01,
-  },
-  wrapper: {
-    flexWrap: "wrap",
-    flexDirection: "row",
-    marginLeft: width * 0.015,
-    paddingBottom: width * 0.02,
   },
   head: {
+    width: "95%",
+    marginBottom: 10,
+    marginHorizontal: 5,
     alignItems: "center",
     justifyContent: "center",
-    marginBottom: width * 0.1,
-    marginHorizontal: width * 0.05,
   },
   headText: {
     fontSize: 25,
     color: "white",
-    marginBottom: width * 0.05,
+    marginBottom: 5,
   },
   text: {
     fontSize: 14,
-    marginTop: 10,
+    width: "45%",
     color: "gray",
-    width: width * 0.45,
+    marginTop: 10,
   },
   textRed: {
     color: "red",
+    width: "45%",
     fontSize: 14,
-    width: width * 0.45,
   },
   Text: {
+    width: "45%",
     fontSize: 20,
     color: "white",
-    width: width * 0.45,
   },
   row: {
-    width: width * 0.95,
+    width: "95%",
+    marginTop: 20,
     flexDirection: "row",
     justifyContent: "space-between",
   },
